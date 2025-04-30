@@ -60,6 +60,26 @@
       ],
       "drc_exclusions": [
         [
+          "clearance|149850000|50125000|82a333a3-f4a2-4709-9d7f-1a3b1fc7ed9b|c0e5026b-72d9-47db-b9c3-a8ced619e504",
+          ""
+        ],
+        [
+          "clearance|152150000|51875000|10419218-f6c0-4b03-9881-605d304fdb29|b1a466cb-bf8a-4513-bd19-07e8c8e52c48",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155781000|53781000|1e990c5a-3fc5-484c-8c77-6cec583905bf|62207684-246d-4b10-bada-243fa0c98646",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155781000|56838500|1e990c5a-3fc5-484c-8c77-6cec583905bf|59b3bc1c-18af-4093-99d1-5c837f28959f",
+          ""
+        ],
+        [
+          "copper_edge_clearance|155781000|56838500|1e990c5a-3fc5-484c-8c77-6cec583905bf|8a2779c0-4d40-45b7-85df-234e1b359044",
+          ""
+        ],
+        [
           "holes_co_located|148500000|52500000|73d8efae-eddb-489f-af0a-7c8c54f1149a|f3cc01fa-a959-452e-b1e9-1faf77652feb",
           ""
         ],
@@ -80,7 +100,7 @@
           ""
         ],
         [
-          "shorting_items|152500000|52775000|50ec916d-03db-45ed-a29c-1d50d55afb2d|10419218-f6c0-4b03-9881-605d304fdb29",
+          "shorting_items|152500000|52775000|10419218-f6c0-4b03-9881-605d304fdb29|50ec916d-03db-45ed-a29c-1d50d55afb2d",
           ""
         ],
         [
@@ -88,7 +108,7 @@
           ""
         ],
         [
-          "solder_mask_bridge|152500000|52775000|50ec916d-03db-45ed-a29c-1d50d55afb2d|10419218-f6c0-4b03-9881-605d304fdb29",
+          "solder_mask_bridge|152500000|52775000|10419218-f6c0-4b03-9881-605d304fdb29|50ec916d-03db-45ed-a29c-1d50d55afb2d",
           ""
         ]
       ],
@@ -531,7 +551,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "outputs/noHoles/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Wand_Control_Board.step",
