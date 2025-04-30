@@ -60,55 +60,7 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|149850000|50125000|82a333a3-f4a2-4709-9d7f-1a3b1fc7ed9b|c0e5026b-72d9-47db-b9c3-a8ced619e504",
-          ""
-        ],
-        [
-          "clearance|152150000|51875000|10419218-f6c0-4b03-9881-605d304fdb29|b1a466cb-bf8a-4513-bd19-07e8c8e52c48",
-          ""
-        ],
-        [
-          "copper_edge_clearance|155781000|53781000|1e990c5a-3fc5-484c-8c77-6cec583905bf|62207684-246d-4b10-bada-243fa0c98646",
-          ""
-        ],
-        [
-          "copper_edge_clearance|155781000|56838500|1e990c5a-3fc5-484c-8c77-6cec583905bf|59b3bc1c-18af-4093-99d1-5c837f28959f",
-          ""
-        ],
-        [
-          "copper_edge_clearance|155781000|56838500|1e990c5a-3fc5-484c-8c77-6cec583905bf|8a2779c0-4d40-45b7-85df-234e1b359044",
-          ""
-        ],
-        [
-          "holes_co_located|148500000|52500000|73d8efae-eddb-489f-af0a-7c8c54f1149a|f3cc01fa-a959-452e-b1e9-1faf77652feb",
-          ""
-        ],
-        [
-          "holes_co_located|150500000|52500000|08cee149-94c1-4ef3-82d8-3434f215b87f|14385346-2609-48de-818c-10e784a1a357",
-          ""
-        ],
-        [
-          "holes_co_located|152500000|52500000|10419218-f6c0-4b03-9881-605d304fdb29|50ec916d-03db-45ed-a29c-1d50d55afb2d",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|150500000|52500000|9fe8eb83-877b-43f1-a7cf-ad3338ce18e8|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "shorting_items|152500000|52500000|50ec916d-03db-45ed-a29c-1d50d55afb2d|f7f5d9c2-a399-4988-aba2-dccdcec01230",
-          ""
-        ],
-        [
-          "shorting_items|152500000|52775000|10419218-f6c0-4b03-9881-605d304fdb29|50ec916d-03db-45ed-a29c-1d50d55afb2d",
-          ""
-        ],
-        [
-          "solder_mask_bridge|152500000|52500000|f7f5d9c2-a399-4988-aba2-dccdcec01230|50ec916d-03db-45ed-a29c-1d50d55afb2d",
-          ""
-        ],
-        [
-          "solder_mask_bridge|152500000|52775000|10419218-f6c0-4b03-9881-605d304fdb29|50ec916d-03db-45ed-a29c-1d50d55afb2d",
+          "courtyards_overlap|154945000|54305000|afcf6053-d4ab-4aff-aa16-cbd92054c3bf|c399657a-fff5-4af1-9c4f-92ee20314fd7",
           ""
         ]
       ],
@@ -551,7 +503,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "outputs/noHoles/",
+      "plot": "outputs/withHoles/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "Wand_Control_Board.step",
