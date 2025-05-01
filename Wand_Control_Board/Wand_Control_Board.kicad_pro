@@ -503,10 +503,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "outputs/withHoles/",
+      "plot": "outputs/noHoles/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Wand_Control_Board.step",
+      "step": "Wand_Control_Board.stl",
       "svg": "",
       "vrml": ""
     },
