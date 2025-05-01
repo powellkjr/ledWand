@@ -506,7 +506,7 @@
       "plot": "outputs/noHoles/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Wand_Control_Board.stl",
+      "step": "Wand_Control_Board.step",
       "svg": "",
       "vrml": ""
     },
