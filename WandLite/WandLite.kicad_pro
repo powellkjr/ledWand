@@ -52,16 +52,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "copper_edge_clearance|143475000|70925000|e98f0535-8957-4937-b590-20d0b60cd1eb|24715d6c-5a96-4a44-ace9-c4f38337ca79",
-          ""
-        ],
-        [
-          "copper_edge_clearance|143475000|85075000|e98f0535-8957-4937-b590-20d0b60cd1eb|23d5382d-cca7-4878-81d5-55677f2a04d3",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -508,7 +499,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "output/withHoles",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

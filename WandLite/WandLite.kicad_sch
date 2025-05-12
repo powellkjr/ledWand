@@ -1901,7 +1901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 190.5 87.63 0)
 			(effects
 				(font
@@ -1967,7 +1967,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 101.6 92.71 0)
 			(effects
 				(font
@@ -2033,7 +2033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 190.5 92.71 0)
 			(effects
 				(font
@@ -2099,7 +2099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 101.6 97.79 0)
 			(effects
 				(font
@@ -2165,7 +2165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 189.23 158.75 0)
 			(effects
 				(font
@@ -2301,7 +2301,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 101.6 100.33 0)
 			(effects
 				(font
@@ -2367,7 +2367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 189.23 156.21 0)
 			(effects
 				(font
@@ -2725,7 +2725,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 190.5 90.17 0)
 			(effects
 				(font
@@ -2862,7 +2862,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 101.6 95.25 0)
 			(effects
 				(font
@@ -2993,7 +2993,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x01_D0.65mm_OD1.7mm_Relief"
+		(property "Footprint" "Kelvin_Library:SolderWire-0.15sqmm_1x01_D0.5mm_OD1.5mm_Relief_SHORT"
 			(at 190.5 85.09 0)
 			(effects
 				(font
