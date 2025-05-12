@@ -54,7 +54,11 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "copper_edge_clearance|144112892|79102108|e98f0535-8957-4937-b590-20d0b60cd1eb|c67af423-8f50-4daf-bcd6-8d99be082a10",
+          "copper_edge_clearance|143475000|70925000|e98f0535-8957-4937-b590-20d0b60cd1eb|24715d6c-5a96-4a44-ace9-c4f38337ca79",
+          ""
+        ],
+        [
+          "copper_edge_clearance|143475000|85075000|e98f0535-8957-4937-b590-20d0b60cd1eb|23d5382d-cca7-4878-81d5-55677f2a04d3",
           ""
         ]
       ],
