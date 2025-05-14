@@ -1311,6 +1311,12 @@
 		(uuid "3b79f385-b5fe-4059-947a-100a3388bb80")
 	)
 	(junction
+		(at 161.29 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40eaf574-c4e6-40e1-a3a5-66428b244db5")
+	)
+	(junction
 		(at 154.94 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1712,7 +1718,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 85.09) (xy 176.53 104.14)
+			(xy 157.48 104.14) (xy 161.29 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1759,6 +1765,16 @@
 			(type default)
 		)
 		(uuid "c66be474-5157-4464-9f52-fb0d9c47f6bb")
+	)
+	(wire
+		(pts
+			(xy 161.29 104.14) (xy 176.53 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbd810dc-07ed-4e78-8468-f810c64e1b06")
 	)
 	(wire
 		(pts
@@ -1899,7 +1915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "116daba4-6dd6-4aea-b2aa-c7ad9191c2cc")
-		(property "Reference" "MD+"
+		(property "Reference" "MD+1"
 			(at 191.77 86.3599 0)
 			(effects
 				(font
@@ -1950,7 +1966,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "MD+")
+					(reference "MD+1")
 					(unit 1)
 				)
 			)
@@ -1965,7 +1981,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18e2c795-bcf5-45ba-8521-ff56041db513")
-		(property "Reference" "VCC-O"
+		(property "Reference" "VCC-O1"
 			(at 100.33 93.9801 0)
 			(effects
 				(font
@@ -2016,7 +2032,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "VCC-O")
+					(reference "VCC-O1")
 					(unit 1)
 				)
 			)
@@ -2031,7 +2047,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "252a2eda-0b2b-4c78-9b80-d2d89407528b")
-		(property "Reference" "GND-C"
+		(property "Reference" "GND-C1"
 			(at 191.77 91.4399 0)
 			(effects
 				(font
@@ -2082,7 +2098,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "GND-C")
+					(reference "GND-C1")
 					(unit 1)
 				)
 			)
@@ -2163,7 +2179,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46785a1b-dda7-468c-a0e9-2248e640e14e")
-		(property "Reference" "VCC-I"
+		(property "Reference" "VCC-I1"
 			(at 190.5 157.4799 0)
 			(effects
 				(font
@@ -2214,7 +2230,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "VCC-I")
+					(reference "VCC-I1")
 					(unit 1)
 				)
 			)
@@ -2299,7 +2315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6558a601-addd-423d-8ffa-6e739a3d9456")
-		(property "Reference" "GND-O"
+		(property "Reference" "GND-O1"
 			(at 100.33 101.6001 0)
 			(effects
 				(font
@@ -2350,7 +2366,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "GND-O")
+					(reference "GND-O1")
 					(unit 1)
 				)
 			)
@@ -2366,7 +2382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6968961b-f1d3-4c5f-b3a4-f97768e0d74f")
-		(property "Reference" "VCC-C"
+		(property "Reference" "VCC-C1"
 			(at 194.31 96.5199 0)
 			(effects
 				(font
@@ -2417,7 +2433,7 @@
 		(instances
 			(project ""
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "VCC-C")
+					(reference "VCC-C1")
 					(unit 1)
 				)
 			)
@@ -2432,7 +2448,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d8d3fa1-d83f-452a-942c-698652795602")
-		(property "Reference" "GND-I"
+		(property "Reference" "GND-I1"
 			(at 190.5 154.9399 0)
 			(effects
 				(font
@@ -2483,7 +2499,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "GND-I")
+					(reference "GND-I1")
 					(unit 1)
 				)
 			)
@@ -2790,7 +2806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94173907-e968-4c43-b83b-2347cc24b38c")
-		(property "Reference" "TRIG"
+		(property "Reference" "TRIG1"
 			(at 191.77 88.8999 0)
 			(effects
 				(font
@@ -2841,7 +2857,7 @@
 		(instances
 			(project "WandLite"
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "TRIG")
+					(reference "TRIG1")
 					(unit 1)
 				)
 			)
@@ -3058,7 +3074,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2bc8fc6-25db-4598-8d79-12d2c0c28ae9")
-		(property "Reference" "MD-"
+		(property "Reference" "MD-1"
 			(at 191.77 83.8199 0)
 			(effects
 				(font
@@ -3109,7 +3125,7 @@
 		(instances
 			(project ""
 				(path "/ec341423-d53c-4c2b-9a9f-1b4b216b1e78"
-					(reference "MD-")
+					(reference "MD-1")
 					(unit 1)
 				)
 			)
