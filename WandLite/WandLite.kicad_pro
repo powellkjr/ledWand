@@ -499,10 +499,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "output/withHoles",
+      "plot": "output/noHoles",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "WandLite.step",
       "svg": "",
       "vrml": ""
     },
