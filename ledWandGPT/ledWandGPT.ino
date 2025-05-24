@@ -3,6 +3,19 @@
 #include <avr/sleep.h>
 #include <avr/interrupt.h>
 
+//     5   P   P   P
+//     v   2   1   0 
+//     |   |   |   |
+//  __ 8 _ 7 _ 6 _ 5 __
+// |                   |
+//  \                  |
+//  /                  |
+// |__   _   _   _   __|
+//     1   2   3   4
+//     |   |   |   |
+//     R   P   P   0
+//     S   3   4   V
+
 #define LED_PIN     0   // ATTINY85 Pin 5 (PB0)
 #define NUM_LEDS    20
 #define BRIGHTNESS  64
@@ -10,7 +23,7 @@
 #define COLOR_ORDER GRB
 CRGB leds[NUM_LEDS];
 
-#define BUTTON1_PIN 2   // PB2 - Effect selector
+#define BUTTON1_PIN 3   // PB3 - Effect selector
 #define BUTTON2_PIN 4   // PB4 - Effect trigger
 
 #define EEPROM_ADDRESS 0
@@ -38,7 +51,7 @@ void loop() {
   showIdleIndicator();
 
   if (digitalRead(BUTTON1_PIN) == LOW) {
-    delay(200);
+    delay(400);
     currentEffect = (currentEffect + 1) % totalEffects;
     lastIdleEffect = -1;
     lastActivityTime = millis();
@@ -95,7 +108,7 @@ void runEffectHold(int effectNumber) {
     case 2: fireEffect(); break;
     case 3: rainbowCycle(); break;
     case 4: purpleWipe(); break;
-    case 5: meteorRain(); break;
+    case 5: meteorRain(0x80,0x00,0x80,2,64,true,25); break;
   }
 }
 
@@ -156,18 +169,33 @@ void purpleWipe() {
   leds[pos] = CRGB::Purple;
   FastLED.show();
   leds[pos] = CRGB::Black;
-  pos = (pos + 1) % NUM_LEDS;
-  delay(60);
+  pos = (pos - 1) % NUM_LEDS;
+  delay(40);
 }
 
-void meteorRain() {
-  static int pos = 0;
-  for (int i = NUM_LEDS - 1; i > 0; i--) {
-    leds[i] = leds[i - 1];
+void meteorRain(byte red, byte green, byte blue, byte meteorSize, byte meteorTrailDecay, boolean meteorRandomDecay, int SpeedDelay) {  
+  setAll(0,0,0);
+ 
+  for(int i = 0; i < NUM_LEDS+NUM_LEDS; i++) {
+   
+   
+    // fade brightness all LEDs one step
+    for(int j=0; j<NUM_LEDS; j++) {
+      if( (!meteorRandomDecay) || (random(10)>5) ) {
+        fadeToBlack(j, meteorTrailDecay );        
+      }
+    }
+   
+    // draw meteor
+    for(int j = 0; j < meteorSize; j++) {
+      if( ( i-j <NUM_LEDS) && (i-j>=0) ) {
+        setPixel(i-j, red, green, blue);
+      }
+    }
+   
+    showStrip();
+    delay(SpeedDelay);
   }
-  leds[0] = CRGB::White;
-  FastLED.show();
-  delay(50);
 }
 
 void fadeToBlack(CRGB color) {
@@ -195,7 +223,7 @@ void clearLeds() {
 
 void enterSleep() {
   GIMSK |= _BV(PCIE);
-  PCMSK |= _BV(PCINT2) | _BV(PCINT4);
+  PCMSK |= _BV(PCINT3) | _BV(PCINT4);
   ADCSRA &= ~(1 << ADEN);
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   sleep_enable();

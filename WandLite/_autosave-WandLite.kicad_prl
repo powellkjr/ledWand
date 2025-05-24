@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 5,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -49,7 +49,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff7_5fffffff",
+    "visible_layers": "ffffffff_ffffffff_fffffff7_ffffff7f",
     "zone_display_mode": 0
   },
   "git": {
@@ -58,7 +58,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "_autosave-WandLite.kicad_prl",
+    "filename": "WandLite.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
