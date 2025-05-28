@@ -174,7 +174,7 @@ void purpleWipe() {
 }
 
 void meteorRain(byte red, byte green, byte blue, byte meteorSize, byte meteorTrailDecay, boolean meteorRandomDecay, int SpeedDelay) {  
-  setAll(0,0,0);
+  clearLeds();
  
   for(int i = 0; i < NUM_LEDS+NUM_LEDS; i++) {
    
@@ -182,7 +182,8 @@ void meteorRain(byte red, byte green, byte blue, byte meteorSize, byte meteorTra
     // fade brightness all LEDs one step
     for(int j=0; j<NUM_LEDS; j++) {
       if( (!meteorRandomDecay) || (random(10)>5) ) {
-        fadeToBlack(j, meteorTrailDecay );        
+        // fadeToBlack(j, meteorTrailDecay ); 
+        leds[j].fadeToBlackBy( meteorTrailDecay );       
       }
     }
    
@@ -193,7 +194,7 @@ void meteorRain(byte red, byte green, byte blue, byte meteorSize, byte meteorTra
       }
     }
    
-    showStrip();
+    FastLED.show();
     delay(SpeedDelay);
   }
 }
@@ -219,6 +220,13 @@ void clearLeds() {
   fill_solid(leds, NUM_LEDS, CRGB::Black);
   FastLED.show();
   lastIdleEffect = -1;
+}
+
+// Set a LED color (not yet visible)
+void setPixel(int Pixel, byte red, byte green, byte blue) {
+   leds[Pixel].r = red;
+   leds[Pixel].g = green;
+   leds[Pixel].b = blue;
 }
 
 void enterSleep() {
