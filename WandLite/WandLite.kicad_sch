@@ -1227,16 +1227,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 109.22) (xy 170.18 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01314226-1717-4f4f-895e-4256227b35ad")
-	)
-	(wire
-		(pts
 			(xy 194.31 76.2) (xy 214.63 76.2)
 		)
 		(stroke
@@ -1244,6 +1234,16 @@
 			(type default)
 		)
 		(uuid "04ae7d92-1aae-4e5f-a877-8d60581ed4e7")
+	)
+	(wire
+		(pts
+			(xy 201.93 109.22) (xy 198.12 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b59817-86d5-4f67-8219-5258647135b8")
 	)
 	(wire
 		(pts
@@ -1274,6 +1274,16 @@
 			(type default)
 		)
 		(uuid "21ebbac9-e4cf-4b11-8b18-285f931481ca")
+	)
+	(wire
+		(pts
+			(xy 190.5 109.22) (xy 190.5 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221e1b4a-b0f1-447a-9096-0a2649306dfc")
 	)
 	(wire
 		(pts
@@ -1347,6 +1357,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 109.22) (xy 190.5 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "415bb5f3-18f2-46ce-953d-9987f997b2d5")
+	)
+	(wire
+		(pts
 			(xy 175.26 158.75) (xy 175.26 143.51)
 		)
 		(stroke
@@ -1387,6 +1407,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 119.38) (xy 168.91 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59c3e963-8ba7-4345-9872-ccdcf62d6e4d")
+	)
+	(wire
+		(pts
 			(xy 201.93 111.76) (xy 194.31 111.76)
 		)
 		(stroke
@@ -1407,16 +1437,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 116.84) (xy 238.76 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6770af97-8372-4de1-8f79-8f5984703f45")
-	)
-	(wire
-		(pts
 			(xy 185.42 106.68) (xy 201.93 106.68)
 		)
 		(stroke
@@ -1434,6 +1454,16 @@
 			(type default)
 		)
 		(uuid "6a0cf9a4-2820-4735-a910-4b2e83198e8e")
+	)
+	(wire
+		(pts
+			(xy 198.12 109.22) (xy 198.12 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f94b196-ca3f-41f1-9f38-a63da620589d")
 	)
 	(wire
 		(pts
@@ -1627,6 +1657,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 116.84) (xy 238.76 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd5c84cd-56ed-4730-b349-8c7f45f6cc3f")
+	)
+	(wire
+		(pts
 			(xy 146.05 58.42) (xy 146.05 76.2)
 		)
 		(stroke
@@ -1737,7 +1777,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 109.22) (xy 168.91 116.84)
+			(xy 168.91 109.22) (xy 168.91 119.38)
 		)
 		(stroke
 			(width 0)

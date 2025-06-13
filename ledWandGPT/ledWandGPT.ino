@@ -50,7 +50,7 @@ void setup() {
 void loop() {
   showIdleIndicator();
 
-  if (digitalRead(BUTTON1_PIN) == LOW) {
+  if (digitalRead(BUTTON1_PIN) == HIGH) {
     delay(400);
     currentEffect = (currentEffect + 1) % totalEffects;
     lastIdleEffect = -1;
@@ -58,7 +58,7 @@ void loop() {
   }
 
   static bool wasHolding = false;
-  bool isHolding = digitalRead(BUTTON2_PIN) == LOW;
+  bool isHolding = digitalRead(BUTTON2_PIN) == HIGH;
 
   if (isHolding) {
     if (!wasHolding) {
@@ -104,11 +104,11 @@ void showIdleIndicator() {
 void runEffectHold(int effectNumber) {
   switch (effectNumber) {
     case 0: solidColor(CRGB::Blue); break;
-    case 1: colorWipe(CRGB::Green); break;
+    case 1: colorWipeUp(CRGB::Green); break;
     case 2: fireEffect(); break;
     case 3: rainbowCycle(); break;
-    case 4: purpleWipe(); break;
-    case 5: meteorRain(0x80,0x00,0x80,2,64,true,25); break;
+    case 4: colorWipedown(CRGB::Purple); break;
+    case 5: meteorRain(0xC0,0xC0,0xC0,2,64,true,25); break;
   }
 }
 
@@ -129,11 +129,24 @@ void solidColor(CRGB color) {
   delay(1000);
 }
 
-void colorWipe(CRGB color) {
+void colorWipeUp(CRGB color) {
   for (int i = 0; i < NUM_LEDS; i++) {
     leds[i] = color;
     FastLED.show();
     delay(50);
+  }
+}
+
+void colorWipedown(CRGB color) {
+  for (int i = NUM_LEDS; i > 0; i--) {
+    leds[i] = color;
+    FastLED.show();
+    delay(25);
+  }
+  for (int i = NUM_LEDS; i > 0; i--) {
+    leds[i] = CRGB::Black;
+    FastLED.show();
+    delay(25);
   }
 }
 
@@ -165,7 +178,7 @@ void rainbowCycle() {
 }
 
 void purpleWipe() {
-  static int pos = 0;
+  static int pos = NUM_LEDS;
   leds[pos] = CRGB::Purple;
   FastLED.show();
   leds[pos] = CRGB::Black;

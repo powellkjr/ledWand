@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.7,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 1.4,
+          "height": 2.1,
+          "width": 2.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -51,14 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|166250000|121725000|bbf660a8-141e-43de-909f-91212e59d898|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
       ],
-      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -185,10 +184,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.35
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -215,12 +211,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -513,7 +504,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "output/noHoles/",
+      "plot": "output/withHoles/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "output/WandLite.step",
